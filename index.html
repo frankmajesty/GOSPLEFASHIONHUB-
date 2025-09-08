@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gospelfashionanddesign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cart-sidebar">
+        <h3>Your Cart</h3>
+        <ul id="cart-item"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button id="close-cart">Close</button>
+    </div>
+    
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <h1 class="logo">Gospel Fashion</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Cart Icon -->
+      <div class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero / Home ===== -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content container">
+        <h1>Gospel Fashion</h1>
+        <p class="tagline">Where Elegance Meets Precision</p>
+        <p class="subtext">
+          Bespoke tailoring and contemporary fashion designed to make you stand out with confidence and grace.
+        </p>
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn">View Collection</a>
+          <a href="#contact" class="btn btn-outline">Book a Fitting</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="about container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p class="lead">
+          Gospel Fashion is more than tailoring — it is a celebration of style, culture, and craftsmanship.
+        </p>
+        <p>
+          With years of experience in bespoke tailoring and modern design, we create timeless pieces that merge tradition with innovation.
+        </p>
+        <p>
+          Our mission is simple: to make you feel confident, elegant, and unique. Whether it’s for a grand event, corporate wear, or everyday style, Majesty Fashion is dedicated to dressing you in excellence.
+        </p>
+        <a href="#gallery" class="btn">Explore Our Work</a>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Tailoring craftsmanship">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="gallery container">
+    <h2>Our Collection</h2>
+    <p class="gallery-intro">
+      A showcase of bespoke tailoring, elegant dresses, and timeless designs crafted with precision and love.
+    </p>
+
+    <!-- Filters -->
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="men">Men</button>
+      <button class="filter-btn" data-filter="women">Women</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-category="men">
+        <img src="https://images.unsplash.com/photo-1520975698519-59c07a1e191a?auto=format&fit=crop&w=800&q=80" alt="Men's Suit">
+        <div class="overlay"><span>Men’s Suit</span></div>
+        <button class="add-cart"></button>
+      </div>
+      <div class="gallery-item" data-category="women">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4e?auto=format&fit=crop&w=800&q=80" alt="Women's Dress">
+        <div class="overlay"><span>Evening Dress</span></div>
+        <button class="add-cart"></button>
+      </div>
+      <div class="gallery-item" data-category="events">
+        <img src="https://images.unsplash.com/photo-1520975918318-3fbb06ff6a28?auto=format&fit=crop&w=800&q=80" alt="Event Wear">
+        <div class="overlay"><span>Event Wear</span></div>
+        <button class="add-cart"></button>
+      </div>
+      <div class="gallery-item" data-category="women">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Custom Dress">
+        <div class="overlay"><span>Custom Dress</span></div>
+      </div>
+      <div class="gallery-item" data-category="men">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Men’s Traditional">
+        <div class="overlay"><span>Traditional Wear</span></div>
+        <button class="add-cart"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact container">
+    <h2>Get in Touch</h2>
+    <p class="contact-intro">
+      We’d love to hear from you! Reach us directly or send a message using the form below.
+    </p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <p><strong>Phone:</strong> <a href="tel:+2349064810473">+2349064810473</a></p>
+        <p><strong>Email:</strong> <a href="mailto:frankmajesty987@gmail.com">frankmajesty987@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/2349064810473" target="_blank">Chat with us</a></p>
+        <p><strong>Address:</strong> express road oyigbo</p>
+      </div>
+
+      <form class="contact-form">
+        <h3>Send a Message</h3>
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="5" placeholder="Tell us about your order / event" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>&copy; 2025 Gospel Fashion. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

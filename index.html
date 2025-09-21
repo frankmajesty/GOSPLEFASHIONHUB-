@@ -9,8 +9,8 @@
 <body>
     <div id="cart-sidebar">
         <h3>Your Cart</h3>
-        <ul id="cart-item"></ul>
-        <p id="cart-total">Total: $0</p>
+  <ul id="cart-items"></ul>
+        <p class="cart-total"></p>
         <button id="close-cart">Close</button>
     </div>
     
@@ -86,25 +86,35 @@
     </div>
   
     <div class="gallery-grid">
-      <div class="gallery-item" data-category="men">
-        <img src="https://images.unsplash.com/photo-1520975698519-59c07a1e191a?auto=format&fit=crop&w=800&q=80" alt="Men's Suit">
+      <div class="gallery-item" data-category="men" data-name="Men’s Suit" data-price="120">
+        <img src="https://picsum.photos/500/600?random=6" alt="Men's Suit">
         <div class="overlay"><span>Men’s Suit</span></div>
+        <button class="add-cart">Add to Cart</button>
       </div>
-      <div class="gallery-item" data-category="women">
+      <div class="gallery-item" data-category="women" data-name="Evening Dress" data-price="150">
         <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4e?auto=format&fit=crop&w=800&q=80" alt="Women's Dress">
         <div class="overlay"><span>Evening Dress</span></div>
+        <button class="add-cart">Add to Cart</button>
       </div>
-      <div class="gallery-item" data-category="events">
+      <div class="gallery-item" data-category="events" data-name="Event Wear" data-price="100">
         <img src="https://images.unsplash.com/photo-1520975918318-3fbb06ff6a28?auto=format&fit=crop&w=800&q=80" alt="Event Wear">
         <div class="overlay"><span>Event Wear</span></div>
+        <button class="add-cart">Add to Cart</button>
       </div>
-      <div class="gallery-item" data-category="women">
+      <div class="gallery-item" data-category="women" data-name="Custom Dress" data-price="180">
         <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Custom Dress">
         <div class="overlay"><span>Custom Dress</span></div>
+        <button class="add-cart">Add to Cart</button>
       </div>
-      <div class="gallery-item" data-category="men">
+      <div class="gallery-item" data-category="men" data-name="Traditional Wear" data-price="90">
         <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Men’s Traditional">
         <div class="overlay"><span>Traditional Wear</span></div>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-item" data-category="men" data-name="Casual Dress" data-price="70">
+        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3bb?auto=format&fit=crop&w=800&q=80" alt="casual dress">
+        <div class="overlay"><span>Casual Dress</span></div>
+        <button class="add-cart">Add to Cart</button>
       </div>
     </div>
   </section>
